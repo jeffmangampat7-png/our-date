@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Our Date ❤️</title>
+
+    <link rel="stylesheet" href="Dating2.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- PAGE 1 -->
+    <!-- ========================= -->
+
+    <section class="page active" id="page1">
+
+        <div class="card">
+
+            <div class="emoji">
+                💌
+            </div>
+
+            <h1>
+                IKAW NGANI! ❤️
+            </h1>
+
+            <p>
+                I made something special for you.
+            </p>
+
+            <p>
+                Are you ready?
+            </p>
+
+            <button
+                class="mainButton"
+                onclick="nextPage(2)">
+
+                Open It 💕
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 2 -->
+    <!-- ========================= -->
+
+    <section class="page" id="page2">
+
+        <div class="card">
+
+            <div class="emoji">
+                🥰
+            </div>
+
+            <h1>
+                I Have A Question...
+            </h1>
+
+            <p>
+                There's something I want to ask you.
+            </p>
+
+            <h2>
+                Will you go on a date with me? ❤️
+            </h2>
+
+
+            <div class="yesNoButtons">
+
+                <button
+                    id="yesBtn"
+                    class="yesButton">
+
+                    YES 💕
+                </button>
+
+
+                <button
+                    id="noBtn"
+                    class="noButton">
+
+                    NO 😢
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 3 -->
+    <!-- ========================= -->
+
+    <section class="page" id="page3">
+
+        <div class="card">
+
+            <div class="emoji">
+                💖
+            </div>
+
+            <h1>
+                YAAAAAY GRABEEEEE! 😭❤️
+            </h1>
+
+            <p>
+                You said YES!
+            </p>
+
+            <p>
+                Now let's plan our date together. 🥰
+            </p>
+
+
+            <button
+                class="mainButton"
+                onclick="nextPage(4)">
+
+                Plan Our Date 💕
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 4 -->
+    <!-- ========================= -->
+
+    <section class="page" id="page4">
+
+        <div class="card dateCard">
+
+            <div class="emoji">
+                🌹
+            </div>
+
+            <h1>
+                Let's Plan Our Date
+            </h1>
+
+            <p>
+                You choose everything! ❤️
+            </p>
+
+
+            <!-- ================= -->
+            <!-- DATE -->
+            <!-- ================= -->
+
+            <div class="selectionSection">
+
+                <h3>
+                    📅 Choose a Date
+                </h3>
+
+                <input
+                    type="date"
+                    id="dateInput">
+
+            </div>
+
+
+
+            <!-- ================= -->
+            <!-- PLACE -->
+            <!-- ================= -->
+
+            <div class="selectionSection">
+
+                <h3>
+                    📍 Choose a Place
+                </h3>
+
+
+                <div class="choiceGrid">
+
+
+                    <button
+                        class="choiceButton placeChoice"
+                        data-value="Coffee Shop ☕">
+
+                        ☕
+                        <span>
+                            Coffee Shop
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton placeChoice"
+                        data-value="Restaurant 🍽️">
+
+                        🍽️
+                        <span>
+                            Restaurant
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton placeChoice"
+                        data-value="Mall 🛍️">
+
+                        🛍️
+                        <span>
+                            Mall
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton placeChoice"
+                        data-value="Park 🌳">
+
+                        🌳
+                        <span>
+                            Park
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton placeChoice"
+                        data-value="Beach 🏖️">
+
+                        🏖️
+                        <span>
+                            Beach
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton placeChoice"
+                        data-value="Movie Theater 🎬">
+
+                        🎬
+                        <span>
+                            Movie
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= -->
+            <!-- PLAN -->
+            <!-- ================= -->
+
+            <div class="selectionSection">
+
+                <h3>
+                    🍽️ Choose Our Plan
+                </h3>
+
+
+                <div class="choiceGrid">
+
+
+                    <button
+                        class="choiceButton planChoice"
+                        data-value="Coffee and Talk ☕">
+
+                        ☕
+                        <span>
+                            Coffee & Talk
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton planChoice"
+                        data-value="Dinner Date 🍽️">
+
+                        🍽️
+                        <span>
+                            Dinner
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton planChoice"
+                        data-value="Movie and Food 🎬">
+
+                        🎬
+                        <span>
+                            Movie & Food
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton planChoice"
+                        data-value="Walk and Talk 🌅">
+
+                        🌅
+                        <span>
+                            Walk & Talk
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton planChoice"
+                        data-value="Adventure Together 🎢">
+
+                        🎢
+                        <span>
+                            Adventure
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="choiceButton planChoice"
+                        data-value="Surprise Me ❤️">
+
+                        ❤️
+                        <span>
+                            Surprise Me
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= -->
+            <!-- SELECTED INFO -->
+            <!-- ================= -->
+
+            <div class="selectedInfo">
+
+                <p>
+                    📍 <strong>Place:</strong>
+                    <span id="selectedPlace">
+                        Not selected
+                    </span>
+                </p>
+
+                <p>
+                    🍽️ <strong>Plan:</strong>
+                    <span id="selectedPlan">
+                        Not selected
+                    </span>
+                </p>
+
+            </div>
+
+
+
+            <!-- ================= -->
+            <!-- CONFIRM -->
+            <!-- ================= -->
+
+            <button
+                class="confirmButton"
+                onclick="confirmDate()">
+
+                Confirm Our Date ❤️
+
+            </button>
+
+
+            <p id="errorMessage"></p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- PAGE 5 -->
+    <!-- ========================= -->
+
+    <section class="page" id="page5">
+
+        <div class="card">
+
+            <div class="emoji">
+                💖
+            </div>
+
+            <h1>
+                It's A Date! 🥰
+            </h1>
+
+            <p>
+                I'm so excited! ❤️
+
+            </p>
+
+
+            <div class="finalBox">
+
+                <div class="finalItem">
+
+                    <span>
+                        📅
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Date
+                        </strong>
+
+                        <p id="finalDate">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="finalItem">
+
+                    <span>
+                        📍
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Place
+                        </strong>
+
+                        <p id="finalPlace">
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="finalItem">
+
+                    <span>
+                        🍽️
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Plan
+                        </strong>
+
+                        <p id="finalPlan">
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h2>
+                See you soon! ❤️
+            </h2>
+
+            <p class="smallText">
+                hindi na ako makapag hintayy. 🥰
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="Dating3.js"></script>
+
+</body>
+
+</html>
+
